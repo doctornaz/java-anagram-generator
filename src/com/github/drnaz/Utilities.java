@@ -17,7 +17,6 @@ final class Utilities {
      * @return A random word from the File with its words scrambled. An anagram.
      */
     public static String getAnagram(String pathToFile){
-        Random random = new Random();
         if(isTextFile(pathToFile)) {
             try {
                 //Read file. If file is not found, FileNotFoundException is caught
@@ -31,6 +30,7 @@ final class Utilities {
                     words[i] = in.next();
                 }
 
+                Random random = new Random();
                 int rand = random.nextInt(words.length);
 
                 char w[] = words[rand].toCharArray();
