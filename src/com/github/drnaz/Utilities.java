@@ -33,7 +33,7 @@ final class Utilities {
 
                 int rand = random.nextInt(words.length);
 
-                char w[] = words[rand].toCharArray();
+                char[] w = words[rand].toCharArray();
                 //Convert one of those words into a
                 // Char Array so we can play with it.
 
